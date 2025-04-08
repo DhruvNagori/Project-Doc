@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - [Clinic Name]</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Dr. Sulabh Nagori</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Book Appointment</a></li> <li><button id="themeToggle" class="theme-button">☀️ / 🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- <main class="contact-page slide-in-bottom">
+        <div class="container">
+            <h1>Contact Our Clinic</h1>
+            <p class="intro">We'd love to hear from you. Please use the information below to get in touch.</p>
+
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h3>Our Location</h3>
+                    <p>[Clinic Address - Line 1]<br>[Clinic Address - Line 2]<br>[City, Postal Code], [Country - India]</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d[Approximate Latitude]!2d[Approximate Longitude]!3d[Approximate Latitude]!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s[Search Query for your clinic on Google Maps]%2C%20Ludhiana%2C%20Punjab%2C%20India!5e0!3m2!1sen!2sin!4v[Current Timestamp]" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="other-contact-info">
+                <h3>Other Ways to Reach Us</h3>
+                <p><strong>Phone:</strong> <a href="tel:[Phone Number]">[Phone Number]</a></p>
+                <p><strong>Email:</strong> <a href="mailto:[Email Address]">[Email Address]</a></p>
+                <p><strong>Clinic Hours:</strong> [Days of the week] - [Opening Time] to [Closing Time]</p>
+            </div>
+        </div>
+    </main> -->
+
+
+    <main class="contact-page">
+        <div class="container">
+            <h1 data-aos="fade-down" data-aos-duration="800">Contact Our Clinic</h1>
+            <p class="intro" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">We'd love to hear from you. Please use the information below to get in touch.</p>
+
+            <div class="contact-details">
+                <!-- <div class="contact-info" data-aos="slide-left" data-aos-duration="800">
+                    <h3>Our Location</h3>
+                    <p>[Clinic Address - Line 1]<br>[Clinic Address - Line 2]<br>[City, Postal Code], [Country - India]</p>
+                    <iframe src="[Your Google Maps Embed URL]" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div> -->
+                <div class="contact-info">
+                    <h3>Our Location</h3>
+                    <p>[Clinic Address - Line 1]<br>[Clinic Address - Line 2]<br>Ludhiana, Postal Code, India</p>
+                    <div id="map-container" style="position: relative;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27204.87899884891!2d75.8035835486328!3d30.9000448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a83744f04964d%3A0xba81ffc1c385210a!2sLudhiana%2C%20Punjab!5e0!3m2!1sen!2sin!4v1712567003358!5m2!1sen!2sin"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div id="map-marker" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); cursor: pointer;">
+                            <i class='bx bxs-map-pin' style="font-size: 32px; color: var(--primary-color);"></i>
+                            <div id="marker-info" style="position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background-color: white; color: black; padding: 8px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); white-space: nowrap; display: none;">
+                                Our Clinic
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="slide-right" data-aos-duration="800" data-aos-delay="200">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group" data-aos="fade-in" data-aos-delay="100">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group" data-aos="fade-in" data-aos-delay="200">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group" data-aos="fade-in" data-aos-delay="300">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group" data-aos="fade-in" data-aos-delay="400">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button primary" data-aos="zoom-in" data-aos-delay="500">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="other-contact-info" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <h3>Other Ways to Reach Us</h3>
+                <p data-aos="fade-in" data-aos-delay="100"><strong>Phone:</strong> <a href="tel:[Phone Number]">[Phone Number]</a></p>
+                <p data-aos="fade-in" data-aos-delay="200"><strong>Email:</strong> <a href="mailto:[Email Address]">[Email Address]</a></p>
+                <p data-aos="fade-in" data-aos-delay="300"><strong>Clinic Hours:</strong> [Days of the week] - [Opening Time] to [Closing Time]</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Dr, Sulabh Nagori. All rights reserved.</p>
+            <div class="social-media">
+                <a href="[Facebook Link]" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="[Twitter Link]" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="[LinkedIn Link]" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <script>
+        AOS.init(); // Initialize AOS
+    </script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Doctor's Name/Clinic Name]</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Dr.Sulabh Nagori</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Book Appointment</a></li> 
+                    <li><button id="themeToggle" class="theme-button">☀️ / 🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your Partner in Health & Well-being</h1>
+                    <p>Providing compassionate and expert medical care.</p>
+                    <a href="#" class="button primary">Book an Appointment</a>
+                </div>
+                <div class="hero-image">
+                    <img src="Image/doctor-placeholder.png" alt="Doctor Image" width="400" height="400>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-preview">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>General Check-ups</h3>
+                        <p>Comprehensive health assessments for all ages.</p>
+                        <a href="services.html#checkups" class="button secondary">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Specialized Treatments</h3>
+                        <p>Expert care for specific medical conditions.</p>
+                        <a href="services.html#treatments" class="button secondary">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Consultations</h3>
+                        <p>Personalized medical advice and guidance.</p>
+                        <a href="services.html#consultations" class="button secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Meet Dr. [Doctor's Last Name]</h2>
+                    <p>With [Number] years of experience, Dr. [Last Name] is dedicated to providing patient-centered care...</p>
+                    <a href="about.html" class="button primary">Read More About Dr. [Last Name]</a>
+                </div>
+                <div class="about-image">
+                    <img src="Image/clinic-placeholder.png" alt="Clinic Image" width="400" height="400>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-preview">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Schedule an appointment or ask us a question.</p>
+                <a href="contact.html" class="button secondary">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Doctor's Name/Clinic Name]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sulabh Nagori</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Dr.Sulabh Nagori</a>
+            </div>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Book Appointment</a></li>
+                    <li><button id="themeToggle" class="theme-button">☀️ / 🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
+                    <h1>Your Partner in Health & Well-being</h1>
+                    <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Providing compassionate and expert medical care.</p>
+                    <a href="javascript:void(0);" id="openBookingModalBtn" class="button primary" data-aos="slide-up" data-aos-duration="600" data-aos-delay="400">Book an Appointment</a>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
+                    <img src="Image/doctor-placeholder.png" alt="Doctor Image" width="400" height="auto">
+                </div>
+            </div>
+        </section>
+
+        <section class="services-preview">
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-duration="800">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="zoom-in-up" data-aos-duration="600">
+                        <h3>General Check-ups</h3>
+                        <p>Comprehensive health assessments for all ages.</p>
+                        <a href="services.html#checkups" class="button secondary">Learn More</a>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="200">
+                        <h3>Specialized Treatments</h3>
+                        <p>Expert care for specific medical conditions.</p>
+                        <a href="services.html#treatments" class="button secondary">Learn More</a>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="400">
+                        <h3>Consultations</h3>
+                        <p>Personalized medical advice and guidance.</p>
+                        <a href="services.html#consultations" class="button secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content" data-aos="slide-right" data-aos-duration="800">
+                    <h2>Meet Dr. Nagori </h2>
+                    <p>With 2 years of experience, Dr. Nagori is dedicated to providing patient-centered care...</p>
+                    <a href="about.html" class="button primary">Read More About Dr. Nagori</a>
+                </div>
+                <div class="about-image" data-aos="slide-left" data-aos-duration="800" data-aos-delay="200">
+                    <img src="Image/clinic-placeholder.png" alt="Clinic Image" width="400" height="auto">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-preview">
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-duration="800">Get in Touch</h2>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Schedule an appointment or ask us a question.</p>
+                <a href="contact.html" class="button secondary" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Request an Appointment</h2>
+            <p>Please fill out the form below to request an appointment.</p>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time">
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Notes:</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="button primary">Submit Request</button>
+            </form>
+            <div id="modalMessage" class="modal-message" style="display:none;"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr.Sulabh Nagori. All rights reserved.</p>
+            <div class="social-media">
+                <a href="[Facebook Link]" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="[Twitter Link]" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="[LinkedIn Link]" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" aria-label="Scroll to Top"><i class='bx bx-chevron-up'></i></button>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <script>
+        AOS.init(); // Initialize AOS
+    </script>
+</body>
+</html>
